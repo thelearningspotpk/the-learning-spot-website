@@ -11,62 +11,58 @@
   <meta property="og:title" content="Ahmed Raza Khan | The Learning Spot">
   <meta property="og:description" content="Your Career Our Focus — Computer Training Institute & Coaching Center in Karachi.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="tls-logo.jpg">
   <style>
-    :root{--orange:#f97316;--yellow:#facc15;--ink:#171717;--muted:#525252;--paper:#fffdf8;--line:#f3e3c5}
-    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    :root{--orange:#f97316;--yellow:#facc15;--ink:#202124;--muted:#525252;--paper:#fff;--line:#f3e3c5}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}
     body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
-    a{color:inherit} .wrap{width:min(1120px,92%);margin:auto}
-    .topbar{background:#171717;color:white;font-size:.9rem;padding:8px 0}
+    a{color:inherit}.wrap{width:min(1120px,92%);margin:auto}
+    .topbar{background:#202124;color:#fff;font-size:.9rem;padding:8px 0}
     .topbar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
-    nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0}
-    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:800}
-    .mark{width:46px;height:46px;border-radius:14px;background:linear-gradient(135deg,var(--yellow),var(--orange));display:grid;place-items:center;color:#171717;font-weight:900;font-size:1.1rem}
-    .brand small{display:block;font-size:.72rem;font-weight:600;color:var(--muted)}
-    .navlinks{display:flex;gap:18px;flex-wrap:wrap}.navlinks a{text-decoration:none;font-weight:700;font-size:.94rem}
-    .navlinks a:hover{color:var(--orange)}
-    .hero{padding:76px 0 68px;background:radial-gradient(circle at 85% 15%,#ffed9a 0,transparent 28%),linear-gradient(135deg,#fffdf8,#fff4d4)}
-    .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:42px;align-items:center}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:800;min-width:0}
+    .brand-logo{width:64px;height:64px;object-fit:contain;border-radius:10px;flex-shrink:0}
+    .brand-name{font-size:1.12rem;line-height:1.25}.brand small{display:block;font-size:.72rem;font-weight:600;color:var(--muted);margin-top:3px}
+    .navlinks{display:flex;gap:18px;flex-wrap:wrap}.navlinks a{text-decoration:none;font-weight:700;font-size:.94rem}.navlinks a:hover{color:var(--orange)}
+    .hero{padding:64px 0;background:radial-gradient(circle at 85% 15%,#ffed9a 0,transparent 28%),linear-gradient(135deg,#fff,#fff6d9)}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:42px;align-items:center}
     .eyebrow{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:.85rem;font-weight:800}
-    h1{font-size:clamp(2.3rem,5vw,4.4rem);line-height:1.08;letter-spacing:-.04em;margin:18px 0}
-    .gradient{background:linear-gradient(90deg,var(--orange),#ca8a04);-webkit-background-clip:text;background-clip:text;color:transparent}
-    .lead{font-size:1.13rem;color:var(--muted);max-width:650px}
-    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
-    .btn{display:inline-block;text-decoration:none;padding:12px 18px;border-radius:12px;font-weight:800;border:2px solid #171717}
-    .btn.primary{background:linear-gradient(100deg,var(--yellow),var(--orange));border-color:transparent}
-    .btn.secondary{background:white}
-    .profile-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:0 18px 50px #9a670c12}
-    .avatar{width:92px;height:92px;border-radius:24px;background:linear-gradient(135deg,var(--yellow),var(--orange));display:grid;place-items:center;font-size:2rem;font-weight:900;margin-bottom:18px}
-    .profile-card h2{margin:0 0 5px;font-size:1.5rem}.role{color:var(--orange);font-weight:800}
-    .pillrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.pill{background:#fff7df;border:1px solid var(--line);border-radius:999px;padding:6px 10px;font-size:.82rem;font-weight:700}
-    section{padding:64px 0}.section-head{max-width:700px;margin-bottom:28px}
+    h1{font-size:clamp(2.3rem,5vw,4.2rem);line-height:1.08;letter-spacing:-.04em;margin:18px 0}
+    .gradient{background:linear-gradient(90deg,var(--orange),#d6a400);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .lead{font-size:1.1rem;color:var(--muted);max-width:650px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+    .btn{display:inline-block;text-decoration:none;padding:12px 18px;border-radius:12px;font-weight:800;border:2px solid #202124}
+    .btn.primary{background:linear-gradient(100deg,var(--yellow),var(--orange));border-color:transparent}.btn.secondary{background:#fff}
+    .profile-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:24px;box-shadow:0 18px 50px #9a670c12;text-align:center}
+    .founder-photo{width:100%;max-width:340px;max-height:390px;object-fit:cover;object-position:center 25%;border-radius:18px;display:block;margin:0 auto 18px}
+    .profile-card h2{margin:0 0 5px;font-size:1.5rem}.role{color:#d65b0b;font-weight:800}
+    .pillrow{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:18px}.pill{background:#fff7df;border:1px solid var(--line);border-radius:999px;padding:6px 10px;font-size:.82rem;font-weight:700}
+    section{padding:62px 0}.section-head{max-width:700px;margin-bottom:28px}
     h2.section-title{font-size:clamp(1.8rem,3vw,2.7rem);line-height:1.15;margin:0 0 12px}
     .sub{color:var(--muted);margin:0}
     .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
     .card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px}
     .card .emoji{font-size:1.7rem}.card h3{margin:12px 0 6px}.card p{margin:0;color:var(--muted)}
-    .about{background:#fff7e5}
-    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+    .about{background:#fff8e7}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
     .feature-list{padding:0;list-style:none}.feature-list li{margin:12px 0;padding-left:28px;position:relative}.feature-list li:before{content:"✓";position:absolute;left:0;color:#ea580c;font-weight:900}
     .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
     .contact-line{padding:12px 0;border-bottom:1px solid var(--line)}.contact-line strong{display:block}
-    footer{background:#171717;color:#f5f5f5;padding:28px 0}footer .wrap{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
-    .small{font-size:.88rem;color:#737373}.notice{font-size:.9rem;color:#7c2d12;background:#fff7ed;border:1px solid #fed7aa;border-radius:12px;padding:12px 14px}
-    @media(max-width:800px){.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.grid3{grid-template-columns:1fr}.navlinks{display:none}.hero{padding:52px 0}.profile-card{max-width:520px}}
+    .socials{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.socials a{border:1px solid var(--line);border-radius:10px;padding:8px 12px;text-decoration:none;font-weight:700;background:#fff}
+    footer{background:#202124;color:#f5f5f5;padding:28px 0}footer .wrap{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+    .small{font-size:.88rem;color:#737373}
+    @media(max-width:800px){.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.grid3{grid-template-columns:1fr}.navlinks{display:none}.hero{padding:44px 0}.profile-card{max-width:520px}.brand-logo{width:52px;height:52px}.brand-name{font-size:1rem}.brand small{font-size:.65rem}}
   </style>
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"EducationalOrganization",
     "name":"The Learning Spot",
+    "url":"https://thelearningspotpk.github.io/the-learning-spot-website/",
+    "logo":"https://thelearningspotpk.github.io/the-learning-spot-website/tls-logo.jpg",
     "description":"Computer Training Institute & Coaching Center",
     "telephone":"+923114323560",
-    "address":{
-      "@type":"PostalAddress",
-      "streetAddress":"Plot-292, Sector-B, Bhittai Colony, Korangi Crossing, near Niazi Chowk, Al-Norani Restaurant",
-      "addressLocality":"Karachi",
-      "addressCountry":"PK"
-    },
+    "address":{"@type":"PostalAddress","streetAddress":"Plot-292, Sector-B, Bhittai Colony, Korangi Crossing, near Niazi Chowk, Al-Norani Restaurant","addressLocality":"Karachi","addressCountry":"PK"},
     "founder":{"@type":"Person","name":"Ahmed Raza Khan","jobTitle":"Director & Founder"}
   }
   </script>
@@ -74,41 +70,35 @@
 <body>
   <div class="topbar"><div class="wrap"><span>📍 Bhittai Colony, Korangi Crossing, Karachi</span><span>☎ <a href="tel:+923114323560">0311 4323560</a></span></div></div>
   <header><nav class="wrap">
-    <a class="brand" href="#home"><span class="mark">TLS</span><span>The Learning Spot<small>Computer Training Institute & Coaching Center</small></span></a>
+    <a class="brand" href="#home"><img class="brand-logo" src="tls-logo.jpg" alt="The Learning Spot logo"><span class="brand-name">The Learning Spot<small>Computer Training Institute &amp; Coaching Center</small><small class="gradient">Your Career Our Focus</small></span></a>
     <div class="navlinks"><a href="#about">About</a><a href="#courses">Courses</a><a href="#founder">Founder</a><a href="#contact">Contact</a></div>
   </nav></header>
   <main>
     <section class="hero" id="home"><div class="wrap hero-grid">
-      <div>
-        <span class="eyebrow">Your Career Our Focus</span>
+      <div><span class="eyebrow">Your Career Our Focus</span>
         <h1>Learn skills.<br><span class="gradient">Build your future.</span></h1>
         <p class="lead">Welcome to The Learning Spot — a computer training institute and coaching center in Karachi, founded by Ahmed Raza Khan to help learners build practical skills and confidence.</p>
         <div class="actions"><a class="btn primary" href="#courses">Explore Courses</a><a class="btn secondary" href="https://wa.me/923114323560" target="_blank" rel="noopener">Contact on WhatsApp</a></div>
       </div>
-      <aside class="profile-card" id="founder">
-        <div class="avatar">ARK</div>
-        <h2>Ahmed Raza Khan</h2>
-        <div class="role">Director & Founder</div>
-        <p class="sub">The Learning Spot, Karachi</p>
+      <aside class="profile-card" id="founder"><img class="founder-photo" src="ahmed-raza-khan.jpg" alt="Ahmed Raza Khan, Director and Founder of The Learning Spot">
+        <h2>Ahmed Raza Khan</h2><div class="role">Director &amp; Founder</div><p class="sub">The Learning Spot, Karachi</p>
         <div class="pillrow"><span class="pill">Computer Education</span><span class="pill">Student Development</span><span class="pill">Practical Learning</span></div>
       </aside>
     </div></section>
     <section id="about"><div class="wrap about-grid">
-      <div class="section-head"><h2 class="section-title">About <span class="gradient">The Learning Spot</span></h2>
-        <p class="sub">Your Career Our Focus. We provide learning opportunities in computer education, English language and academic coaching to help students strengthen their skills and prepare for future opportunities.</p>
-      </div>
-      <div class="card"><h3>Our institute</h3><p>Computer Training Institute & Coaching Center</p><ul class="feature-list"><li>Career-focused computer courses</li><li>English language learning</li><li>Coaching from Nursery to Intermediate</li><li>Supportive learning environment</li></ul></div>
+      <div class="section-head"><h2 class="section-title">About <span class="gradient">The Learning Spot</span></h2><p class="sub">Your Career Our Focus. We provide learning opportunities in computer education, English language and academic coaching to help students strengthen their skills and prepare for future opportunities.</p></div>
+      <div class="card"><h3>Our institute</h3><p>Computer Training Institute &amp; Coaching Center</p><ul class="feature-list"><li>Career-focused computer courses</li><li>English language learning</li><li>Coaching from Nursery to Intermediate</li><li>Supportive learning environment</li></ul></div>
     </div></section>
     <section id="courses" class="about"><div class="wrap">
-      <div class="section-head"><h2 class="section-title">Courses & Learning</h2><p class="sub">Explore the learning areas available at The Learning Spot. Please contact the institute to confirm current batches, fees and schedules.</p></div>
+      <div class="section-head"><h2 class="section-title">Courses &amp; Learning</h2><p class="sub">Explore the learning areas available at The Learning Spot. Please contact the institute to confirm current batches, fees and schedules.</p></div>
       <div class="grid3">
-        <article class="card"><div class="emoji">💻</div><h3>Computer Courses</h3><p>CIT, DIT, MS Office, Graphic Designing, AutoCAD and other practical computer skills.</p></article>
+        <article class="card"><div class="emoji">💻</div><h3>Computer Courses</h3><p>CIT, DIT, MS Office, Graphic Designing, AutoCAD, InPage, Urdu typing and other practical computer skills.</p></article>
         <article class="card"><div class="emoji">🗣️</div><h3>English Language</h3><p>English learning with attention to reading, writing, listening and speaking.</p></article>
         <article class="card"><div class="emoji">📚</div><h3>Coaching Classes</h3><p>Academic coaching for students from Nursery to Intermediate.</p></article>
       </div>
     </div></section>
     <section><div class="wrap about-grid">
-      <div><h2 class="section-title">A message from the founder</h2><p class="sub">At The Learning Spot, our focus is to make learning useful, accessible and connected to real goals. We encourage students to keep learning, practise their skills and work towards a brighter future.</p><p><strong>Ahmed Raza Khan</strong><br><span class="role">Director & Founder, The Learning Spot</span></p></div>
+      <div><h2 class="section-title">A message from the founder</h2><p class="sub">At The Learning Spot, our focus is to make learning useful, accessible and connected to real goals. We encourage students to keep learning, practise their skills and work towards a brighter future.</p><p><strong>Ahmed Raza Khan</strong><br><span class="role">Director &amp; Founder, The Learning Spot</span></p></div>
       <div class="card"><h3>Our slogan</h3><p class="gradient" style="font-size:2rem;font-weight:900;line-height:1.2">Your Career<br>Our Focus</p><p>Learn today. Grow for tomorrow.</p></div>
     </div></section>
     <section id="contact" class="about"><div class="wrap">
@@ -117,13 +107,14 @@
         <div class="card">
           <div class="contact-line"><strong>Phone / WhatsApp</strong><a href="https://wa.me/923114323560" target="_blank" rel="noopener">0311 4323560</a></div>
           <div class="contact-line"><strong>Address</strong>Plot-292, Sector-B, Bhittai Colony, Korangi Crossing, near Niazi Chowk, Al-Norani Restaurant, Karachi.</div>
-          <div class="contact-line"><strong>Institute</strong>The Learning Spot — Computer Training Institute & Coaching Center</div>
+          <div class="contact-line"><strong>Institute</strong>The Learning Spot — Computer Training Institute &amp; Coaching Center</div>
+          <div class="socials"><a href="https://wa.me/923114323560" target="_blank" rel="noopener">WhatsApp</a><a href="https://www.google.com/maps/search/?api=1&amp;query=The%20Learning%20Spot%2C%20Plot-292%2C%20Sector-B%2C%20Bhittai%20Colony%2C%20Karachi" target="_blank" rel="noopener">Google Maps</a></div>
         </div>
-        <div class="card"><h3>Find us on Google Maps</h3><p>Open a map search for the institute location.</p><div class="actions"><a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=The%20Learning%20Spot%2C%20Plot-292%2C%20Sector-B%2C%20Bhittai%20Colony%2C%20Karachi" target="_blank" rel="noopener">Open Google Maps</a></div><p class="small" style="margin-top:14px">Social media links will be added here once the official profile URLs are provided.</p></div>
+        <div class="card"><h3>Visit The Learning Spot</h3><p>Find our location and contact us for admissions, course information and class schedules.</p><div class="actions"><a class="btn primary" href="https://www.google.com/maps/search/?api=1&amp;query=The%20Learning%20Spot%2C%20Plot-292%2C%20Sector-B%2C%20Bhittai%20Colony%2C%20Karachi" target="_blank" rel="noopener">Open Google Maps</a><a class="btn secondary" href="https://wa.me/923114323560" target="_blank" rel="noopener">WhatsApp Us</a></div><p class="small" style="margin-top:14px">Official Facebook, Instagram and YouTube links can be added when you share their profile URLs.</p></div>
       </div>
     </div></section>
   </main>
-  <footer><div class="wrap"><div><strong>The Learning Spot</strong><br><span>Your Career Our Focus</span></div><div>© <span id="year">2026</span> The Learning Spot · Ahmed Raza Khan</div></div></footer>
+  <footer><div class="wrap"><div><strong>The Learning Spot</strong><br><span>Your Career Our Focus</span><br><span>Ahmed Raza Khan · Director &amp; Founder</span></div><div>© <span id="year">2026</span> The Learning Spot</div></div></footer>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
