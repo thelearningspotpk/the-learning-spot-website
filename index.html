@@ -1,120 +1,30 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> The Learning Spot (TLS Official) | Ahmed Raza Khan </title>
-  <meta name="description" content="Ahmed Raza Khan, Director & Founder of The Learning Spot — Computer Training Institute & Coaching Center in Bhittai Colony, Korangi Crossing, Karachi. Explore computer courses, English language classes and coaching.">
-  <meta name="keywords" content="Ahmed Raza Khan, The Learning Spot, computer institute Karachi, computer courses Korangi, English language course Karachi, coaching classes Bhittai Colony">
-  <meta name="author" content="Ahmed Raza Khan">
-  <meta name="theme-color" content="#f59e0b">
-  <meta property="og:title" content="Ahmed Raza Khan | The Learning Spot">
-  <meta property="og:description" content="Your Career Our Focus — Computer Training Institute & Coaching Center in Karachi.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="tls-logo.jpg">
-  <style>
-    :root{--orange:#f97316;--yellow:#facc15;--ink:#202124;--muted:#525252;--paper:#fff;--line:#f3e3c5}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}
-    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
-    a{color:inherit}.wrap{width:min(1120px,92%);margin:auto}
-    .topbar{background:#202124;color:#fff;font-size:.9rem;padding:8px 0}
-    .topbar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-    header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
-    nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px 0}
-    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:800;min-width:0}
-    .brand-logo{width:64px;height:64px;object-fit:contain;border-radius:10px;flex-shrink:0}
-    .brand-name{font-size:1.12rem;line-height:1.25}.brand small{display:block;font-size:.72rem;font-weight:600;color:var(--muted);margin-top:3px}
-    .navlinks{display:flex;gap:18px;flex-wrap:wrap}.navlinks a{text-decoration:none;font-weight:700;font-size:.94rem}.navlinks a:hover{color:var(--orange)}
-    .hero{padding:64px 0;background:radial-gradient(circle at 85% 15%,#ffed9a 0,transparent 28%),linear-gradient(135deg,#fff,#fff6d9)}
-    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:42px;align-items:center}
-    .eyebrow{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:.85rem;font-weight:800}
-    h1{font-size:clamp(2.3rem,5vw,4.2rem);line-height:1.08;letter-spacing:-.04em;margin:18px 0}
-    .gradient{background:linear-gradient(90deg,var(--orange),#d6a400);-webkit-background-clip:text;background-clip:text;color:transparent}
-    .lead{font-size:1.1rem;color:var(--muted);max-width:650px}
-    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
-    .btn{display:inline-block;text-decoration:none;padding:12px 18px;border-radius:12px;font-weight:800;border:2px solid #202124}
-    .btn.primary{background:linear-gradient(100deg,var(--yellow),var(--orange));border-color:transparent}.btn.secondary{background:#fff}
-    .profile-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:24px;box-shadow:0 18px 50px #9a670c12;text-align:center}
-    .founder-photo{width:100%;max-width:340px;max-height:390px;object-fit:cover;object-position:center 25%;border-radius:18px;display:block;margin:0 auto 18px}
-    .profile-card h2{margin:0 0 5px;font-size:1.5rem}.role{color:#d65b0b;font-weight:800}
-    .pillrow{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:18px}.pill{background:#fff7df;border:1px solid var(--line);border-radius:999px;padding:6px 10px;font-size:.82rem;font-weight:700}
-    section{padding:62px 0}.section-head{max-width:700px;margin-bottom:28px}
-    h2.section-title{font-size:clamp(1.8rem,3vw,2.7rem);line-height:1.15;margin:0 0 12px}
-    .sub{color:var(--muted);margin:0}
-    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px}
-    .card .emoji{font-size:1.7rem}.card h3{margin:12px 0 6px}.card p{margin:0;color:var(--muted)}
-    .about{background:#fff8e7}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
-    .feature-list{padding:0;list-style:none}.feature-list li{margin:12px 0;padding-left:28px;position:relative}.feature-list li:before{content:"✓";position:absolute;left:0;color:#ea580c;font-weight:900}
-    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-    .contact-line{padding:12px 0;border-bottom:1px solid var(--line)}.contact-line strong{display:block}
-    .socials{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.socials a{border:1px solid var(--line);border-radius:10px;padding:8px 12px;text-decoration:none;font-weight:700;background:#fff}
-    footer{background:#202124;color:#f5f5f5;padding:28px 0}footer .wrap{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
-    .small{font-size:.88rem;color:#737373}
-    @media(max-width:800px){.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.grid3{grid-template-columns:1fr}.navlinks{display:none}.hero{padding:44px 0}.profile-card{max-width:520px}.brand-logo{width:52px;height:52px}.brand-name{font-size:1rem}.brand small{font-size:.65rem}}
-  </style>
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"EducationalOrganization",
-    "name":"The Learning Spot",
-    "url":"https://thelearningspotpk.github.io/the-learning-spot-website/",
-    "logo":"https://thelearningspotpk.github.io/the-learning-spot-website/tls-logo.jpg",
-    "description":"Computer Training Institute & Coaching Center",
-    "telephone":"+923114323560",
-    "address":{"@type":"PostalAddress","streetAddress":"Plot-292, Sector-B, Bhittai Colony, Korangi Crossing, near Niazi Chowk, Al-Norani Restaurant","addressLocality":"Karachi","addressCountry":"PK"},
-    "founder":{"@type":"Person","name":"Ahmed Raza Khan","jobTitle":"Director & Founder"}
-  }
-  </script>
-</head>
-<body>
-  <div class="topbar"><div class="wrap"><span>📍 Bhittai Colony, Korangi Crossing, Karachi</span><span>☎ <a href="tel:+923114323560">0311 4323560</a></span></div></div>
-  <header><nav class="wrap">
-    <a class="brand" href="#home"><img class="brand-logo" src="tls-logo.jpg" alt="The Learning Spot logo"><span class="brand-name">The Learning Spot<small>Computer Training Institute &amp; Coaching Center</small><small class="gradient">Your Career Our Focus</small></span></a>
-    <div class="navlinks"><a href="#about">About</a><a href="#courses">Courses</a><a href="#founder">Founder</a><a href="#contact">Contact</a></div>
-  </nav></header>
-  <main>
-    <section class="hero" id="home"><div class="wrap hero-grid">
-      <div><span class="eyebrow">Your Career Our Focus</span>
-        <h1>Learn skills.<br><span class="gradient">Build your future.</span></h1>
-        <p class="lead">Welcome to The Learning Spot — a computer training institute and coaching center in Karachi, founded by Ahmed Raza Khan to help learners build practical skills and confidence.</p>
-        <div class="actions"><a class="btn primary" href="#courses">Explore Courses</a><a class="btn secondary" href="https://wa.me/923114323560" target="_blank" rel="noopener">Contact on WhatsApp</a></div>
-      </div>
-      <aside class="profile-card" id="founder"><img class="founder-photo" src="ahmed-raza-khan.jpg" alt="Ahmed Raza Khan, Director and Founder of The Learning Spot">
-        <h2>Ahmed Raza Khan</h2><div class="role">Director &amp; Founder</div><p class="sub">The Learning Spot, Karachi</p>
-        <div class="pillrow"><span class="pill">Computer Education</span><span class="pill">Student Development</span><span class="pill">Practical Learning</span></div>
-      </aside>
-    </div></section>
-    <section id="about"><div class="wrap about-grid">
-      <div class="section-head"><h2 class="section-title">About <span class="gradient">The Learning Spot</span></h2><p class="sub">Your Career Our Focus. We provide learning opportunities in computer education, English language and academic coaching to help students strengthen their skills and prepare for future opportunities.</p></div>
-      <div class="card"><h3>Our institute</h3><p>Computer Training Institute &amp; Coaching Center</p><ul class="feature-list"><li>Career-focused computer courses</li><li>English language learning</li><li>Coaching from Nursery to Intermediate</li><li>Supportive learning environment</li></ul></div>
-    </div></section>
-    <section id="courses" class="about"><div class="wrap">
-      <div class="section-head"><h2 class="section-title">Courses &amp; Learning</h2><p class="sub">Explore the learning areas available at The Learning Spot. Please contact the institute to confirm current batches, fees and schedules.</p></div>
-      <div class="grid3">
-        <article class="card"><div class="emoji">💻</div><h3>Computer Courses</h3><p>CIT, DIT, MS Office, Graphic Designing, AutoCAD, InPage, Urdu typing and other practical computer skills.</p></article>
-        <article class="card"><div class="emoji">🗣️</div><h3>English Language</h3><p>English learning with attention to reading, writing, listening and speaking.</p></article>
-        <article class="card"><div class="emoji">📚</div><h3>Coaching Classes</h3><p>Academic coaching for students from Nursery to Intermediate.</p></article>
-      </div>
-    </div></section>
-    <section><div class="wrap about-grid">
-      <div><h2 class="section-title">A message from the founder</h2><p class="sub">At The Learning Spot, our focus is to make learning useful, accessible and connected to real goals. We encourage students to keep learning, practise their skills and work towards a brighter future.</p><p><strong>Ahmed Raza Khan</strong><br><span class="role">Director &amp; Founder, The Learning Spot</span></p></div>
-      <div class="card"><h3>Our slogan</h3><p class="gradient" style="font-size:2rem;font-weight:900;line-height:1.2">Your Career<br>Our Focus</p><p>Learn today. Grow for tomorrow.</p></div>
-    </div></section>
-    <section id="contact" class="about"><div class="wrap">
-      <div class="section-head"><h2 class="section-title">Contact The Learning Spot</h2><p class="sub">For course information, admissions and inquiries, contact the institute.</p></div>
-      <div class="contact-grid">
-        <div class="card">
-          <div class="contact-line"><strong>Phone / WhatsApp</strong><a href="https://wa.me/923114323560" target="_blank" rel="noopener">0311 4323560</a></div>
-          <div class="contact-line"><strong>Address</strong>Plot-292, Sector-B, Bhittai Colony, Korangi Crossing, near Niazi Chowk, Al-Norani Restaurant, Karachi.</div>
-          <div class="contact-line"><strong>Institute</strong>The Learning Spot — Computer Training Institute &amp; Coaching Center</div>
-          <div class="socials"><a href="https://wa.me/923114323560" target="_blank" rel="noopener">WhatsApp</a><a href="https://www.google.com/maps/search/?api=1&amp;query=The%20Learning%20Spot%2C%20Plot-292%2C%20Sector-B%2C%20Bhittai%20Colony%2C%20Karachi" target="_blank" rel="noopener">Google Maps</a></div>
-        </div>
-        <div class="card"><h3>Visit The Learning Spot</h3><p>Find our location and contact us for admissions, course information and class schedules.</p><div class="actions"><a class="btn primary" href="https://www.google.com/maps/search/?api=1&amp;query=The%20Learning%20Spot%2C%20Plot-292%2C%20Sector-B%2C%20Bhittai%20Colony%2C%20Karachi" target="_blank" rel="noopener">Open Google Maps</a><a class="btn secondary" href="https://wa.me/923114323560" target="_blank" rel="noopener">WhatsApp Us</a></div><p class="small" style="margin-top:14px">Official Facebook, Instagram and YouTube links can be added when you share their profile URLs.</p></div>
-      </div>
-    </div></section>
-  </main>
-  <footer><div class="wrap"><div><strong>The Learning Spot</strong><br><span>Your Career Our Focus</span><br><span>Ahmed Raza Khan · Director &amp; Founder</span></div><div>© <span id="year">2026</span> The Learning Spot</div></div></footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-</body>
-</html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Learning Spot (TLS Official) | Ahmed Raza Khan</title>
+<meta name="description" content="The Learning Spot is a computer training institute and coaching center in Karachi, founded by Ahmed Raza Khan.">
+<style>
+:root{--o:#f59e0b;--y:#facc15;--ink:#171717;--line:#eee4cc}*{box-sizing:border-box}body{margin:0;font:16px/1.6 Arial,sans-serif;color:var(--ink);background:#fffdf7}a{color:#995700}.top{background:linear-gradient(110deg,var(--o),var(--y));padding:10px;text-align:center;font-weight:bold}header{background:white;padding:18px 5%;border-bottom:1px solid var(--line)}.brand,.inner{max-width:1080px;margin:auto}.brand{display:flex;align-items:center;gap:14px}.logo{width:70px;height:70px;object-fit:contain}h1{margin:0;font-size:clamp(1.5rem,4vw,2.3rem);line-height:1.2}.sub{margin:4px 0}.slogan{margin:0;color:#a45c00;font-style:italic;font-weight:bold}nav{display:flex;justify-content:center;flex-wrap:wrap;gap:18px;background:#222;padding:12px}nav a{color:white;text-decoration:none;font-weight:bold}section{padding:44px 5%}.hero{background:linear-gradient(135deg,#fff5d9,#fff 65%,#ffecaa)}.grid{display:grid;grid-template-columns:1.3fr .7fr;gap:24px;align-items:center}.eyebrow{color:#a45c00;font-weight:bold;text-transform:uppercase;letter-spacing:1px}h2{font-size:clamp(1.6rem,4vw,2.2rem);line-height:1.2;margin:8px 0 14px}.photo{display:block;width:100%;max-width:300px;max-height:350px;object-fit:cover;margin:auto;border:5px solid white;border-radius:16px;box-shadow:0 8px 24px #0002}.center{text-align:center}.btn{display:inline-block;background:var(--o);padding:10px 16px;border-radius:8px;text-decoration:none;color:#111;font-weight:bold;border:0;cursor:pointer;margin:5px 5px 0 0}.dark{background:#222;color:white}.soft{background:#fff7df}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card,.review{background:white;border:1px solid var(--line);border-radius:12px;padding:18px}.card h3{margin-top:0}.intro{max-width:760px;margin:0 auto 22px;text-align:center;color:#666}.contact{display:grid;grid-template-columns:1fr 1fr;gap:16px}.summary{display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap;margin:18px}.stars{color:#d97706;letter-spacing:2px}.review-list{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:25px}form{max-width:650px;margin:auto}label{display:block;font-weight:bold;margin:12px 0 5px}input,select,textarea{width:100%;font:inherit;padding:11px;border:1px solid #d7cdb7;border-radius:8px;background:white}textarea{min-height:100px}.small{font-size:.9rem;color:#666}.status{text-align:center;min-height:26px;margin:10px}.trap{position:absolute;left:-9999px}footer{background:#222;color:white;text-align:center;padding:24px 5%}footer a{color:#ffd166}@media(max-width:700px){.grid,.contact,.cards,.review-list{grid-template-columns:1fr}.brand{align-items:flex-start}.logo{width:55px;height:55px}}
+</style></head><body>
+<div class="top">Admissions &amp; Learning Opportunities at The Learning Spot</div>
+<header><div class="brand"><img class="logo" src="tls-logo.jpg" alt="The Learning Spot logo" onerror="this.style.display='none'"><div><h1>The Learning Spot (TLS)</h1><p class="sub">Computer Training Institute &amp; Coaching Center</p><p class="slogan">Your Career Our Focus</p></div></div></header>
+<nav><a href="#about">About</a><a href="#courses">Courses</a><a href="#founder">Founder</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></nav>
+<main><section class="hero"><div class="inner grid"><div><div class="eyebrow">Learn • Practice • Grow</div><h2>Build Your Skills. Shape Your Future.</h2><p>The Learning Spot helps learners develop practical computer, language and academic skills in a supportive environment.</p><a class="btn" href="https://wa.me/923114323560" target="_blank" rel="noopener">Contact on WhatsApp</a><a class="btn dark" href="#courses">Explore Courses</a></div><div id="founder"><img class="photo" src="ahmed-raza-khan.jpg" alt="Ahmed Raza Khan" onerror="this.style.display='none'"><p class="center"><b>Mr. Ahmed Raza Khan</b><br>Director &amp; Founder</p></div></div></section>
+<section id="about"><div class="inner"><h2 class="center">About The Learning Spot</h2><p class="intro">Our aim is to make useful education and practical skills accessible, helping learners build confidence and prepare for future opportunities.</p></div></section>
+<section class="soft" id="courses"><div class="inner"><h2 class="center">Courses &amp; Learning Programs</h2><p class="intro">Contact us for current batches, duration, schedule and fee details.</p><div class="cards"><article class="card"><h3>Computer Courses</h3><p>CIT, DIT, MS Office, Graphic Designing, AutoCAD and other practical computer skills.</p></article><article class="card"><h3>English Language</h3><p>Build reading, writing, listening and speaking skills through structured learning and practice.</p></article><article class="card"><h3>Coaching Classes</h3><p>Academic coaching support from Nursery to Intermediate. Ask about available subjects and timings.</p></article></div></div></section>
+<section id="reviews"><div class="inner"><h2 class="center">Student Reviews</h2><p class="intro">Share honest feedback about your learning experience at The Learning Spot.</p><div class="summary"><b id="averageRating">— / 3</b><span id="averageStars" class="stars">☆☆☆</span><span id="reviewCount">Loading reviews…</span></div><form id="reviewForm"><label for="reviewName">Your name (optional)</label><input id="reviewName" maxlength="80" placeholder="Enter your name"><label for="reviewRating">Your rating</label><select id="reviewRating"><option value="3">3 — Excellent</option><option value="2">2 — Good</option><option value="1">1 — Needs improvement</option></select><label for="reviewText">Your review</label><textarea id="reviewText" minlength="3" maxlength="1000" required placeholder="Write your feedback (3–1000 characters)"></textarea><div class="trap"><label for="website">Leave empty</label><input id="website" tabindex="-1" autocomplete="off"></div><button class="btn" id="submitReview">Submit Review</button><p class="small">Do not include private information. Reviews may be displayed publicly.</p><div class="status" id="reviewStatus" role="status"></div></form><div class="review-list" id="reviewList"></div></div></section>
+<section class="soft" id="contact"><div class="inner"><h2 class="center">Contact Us</h2><p class="intro">Ask us about courses, admissions and class schedules.</p><div class="contact"><div class="card"><h3>Visit The Learning Spot</h3><p><b>Address:</b><br>Plot-292, Sector-B, Bhittai Colony Korangi Crossing, near Niazi Chowk, Al-Norani Restaurant, Karachi.</p><p><b>Phone / WhatsApp:</b><br><a href="https://wa.me/923114323560">03114323560</a></p></div><div class="card"><h3>Our Focus</h3><p>Practical skills, learning support, confidence and career development.</p><b>Your Career Our Focus</b></div></div></div></section></main>
+<footer><b>The Learning Spot (TLS)</b><br>Computer Training Institute &amp; Coaching Center<br>Your Career Our Focus<p>Total page visits: <b id="visitCount">—</b></p><small>© <span id="year"></span> The Learning Spot. All rights reserved.</small></footer>
+<script>
+/* Replace both placeholders with your Supabase Project URL and Publishable key.
+   Never use a secret/service_role key in this public HTML. */
+const SUPABASE_URL="YOUR_SUPABASE_PROJECT_URL";
+const SUPABASE_PUBLISHABLE_KEY="YOUR_SUPABASE_PUBLISHABLE_KEY";
+const configured=!SUPABASE_URL.includes("YOUR_SUPABASE")&&!SUPABASE_PUBLISHABLE_KEY.includes("YOUR_SUPABASE");
+const headers={apikey:SUPABASE_PUBLISHABLE_KEY,Authorization:"Bearer "+SUPABASE_PUBLISHABLE_KEY,"Content-Type":"application/json"};
+document.getElementById("year").textContent=new Date().getFullYear();
+function stars(n){return "★".repeat(n)+"☆".repeat(3-n)}
+async function loadReviews(){if(!configured)return;const status=document.getElementById("reviewStatus");try{const r=await fetch(`${SUPABASE_URL}/rest/v1/website_reviews?select=name,rating,review_text,created_at&order=created_at.desc&limit=50`,{headers});if(!r.ok)throw Error("Could not load reviews. Check Supabase table and policies.");const data=await r.json(),n=data.length,avg=n?data.reduce((s,x)=>s+Number(x.rating),0)/n:0;document.getElementById("averageRating").textContent=n?avg.toFixed(1)+" / 3":"— / 3";document.getElementById("averageStars").textContent=n?stars(Math.round(avg)):"☆☆☆";document.getElementById("reviewCount").textContent=`${n} review${n===1?"":"s"} shown`;const list=document.getElementById("reviewList");list.replaceChildren();if(!n){list.textContent="No reviews yet. Be the first to share feedback.";return}data.forEach(x=>{const c=document.createElement("article");c.className="review";const name=document.createElement("b");name.textContent=x.name&&x.name.trim()?x.name.trim():"Anonymous";const s=document.createElement("div");s.className="stars";s.textContent=stars(Number(x.rating));const p=document.createElement("p");p.textContent=x.review_text;const d=document.createElement("small");d.className="small";d.textContent=x.created_at?new Date(x.created_at).toLocaleDateString():"";c.append(name,s,p,d);list.append(c)})}catch(e){status.textContent=e.message;document.getElementById("reviewCount").textContent="Reviews unavailable"}}
+document.getElementById("reviewForm").addEventListener("submit",async e=>{e.preventDefault();const status=document.getElementById("reviewStatus"),btn=document.getElementById("submitReview");if(!configured){status.textContent="Add your Supabase URL and publishable key first.";return}if(document.getElementById("website").value){status.textContent="Unable to submit.";return}const name=document.getElementById("reviewName").value.trim(),rating=Number(document.getElementById("reviewRating").value),review_text=document.getElementById("reviewText").value.trim();if(review_text.length<3||review_text.length>1000){status.textContent="Write a review between 3 and 1000 characters.";return}btn.disabled=true;status.textContent="Submitting…";try{const r=await fetch(`${SUPABASE_URL}/rest/v1/website_reviews`,{method:"POST",headers:{...headers,Prefer:"return=minimal"},body:JSON.stringify({name:name||null,rating,review_text})});if(!r.ok)throw Error(r.status===401||r.status===403?"Submission blocked. Check the Supabase insert policy.":"Could not submit review: "+(await r.text()).slice(0,150));e.target.reset();status.textContent="Thank you! Your review has been submitted.";await loadReviews()}catch(err){status.textContent=err.message}finally{btn.disabled=false}});
+async function loadVisits(){if(!configured)return;try{const r=await fetch(`${SUPABASE_URL}/rest/v1/rpc/record_website_visit`,{method:"POST",headers,body:"{}"});if(!r.ok)throw Error();const n=await r.json();document.getElementById("visitCount").textContent=Number(n).toLocaleString()}catch{document.getElementById("visitCount").textContent="Not configured yet"}}
+if(configured){loadReviews();loadVisits()}else{document.getElementById("reviewCount").textContent="Setup needed";document.getElementById("reviewList").textContent="Add the Supabase URL and publishable key to enable reviews.";document.getElementById("visitCount").textContent="Setup needed"}
+</script></body></html>
