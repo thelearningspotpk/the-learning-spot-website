@@ -17,8 +17,8 @@
 <script>
 /* Replace both placeholders with your Supabase Project URL and Publishable key.
    Never use a secret/service_role key in this public HTML. */
-const SUPABASE_URL="YOUR_SUPABASE_PROJECT_URL";
-const SUPABASE_PUBLISHABLE_KEY="YOUR_SUPABASE_PUBLISHABLE_KEY";
+const SUPABASE_URL="https://cuvjaxfzzyiwqtehtdyu.supabase.co/rest/v1/";
+const SUPABASE_PUBLISHABLE_KEY="sb_publishable_YaU0Q9RdcF9jLos4Pyqzag_9lteL-pg";
 const configured=!SUPABASE_URL.includes("YOUR_SUPABASE")&&!SUPABASE_PUBLISHABLE_KEY.includes("YOUR_SUPABASE");
 const headers={apikey:SUPABASE_PUBLISHABLE_KEY,Authorization:"Bearer "+SUPABASE_PUBLISHABLE_KEY,"Content-Type":"application/json"};
 document.getElementById("year").textContent=new Date().getFullYear();
